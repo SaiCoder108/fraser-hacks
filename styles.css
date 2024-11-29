@@ -1,124 +1,76 @@
 /* General Styles */
 body {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff6e3;
+    background-color: #f0f8ff;
 }
 
-/* Header Section */
-header {
-    background-color: #fff6e3;
-    padding: 10px;
-    border-bottom: 5px solid #3aafa8;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-.header-left img,
-.header-right img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
-
-/* Navigation Bar */
-nav {
+/* Header */
+.header {
     background-color: #2b7a78;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: transparent;
-    border-radius: 8px;
-    margin: 0 10px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-nav a:hover {
-    color: #3aafa8;
-    background-color: #ffffff;
-}
-
-/* Form Section */
-form {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
     padding: 20px;
+    color: white;
     text-align: center;
 }
 
-form label {
-    font-size: 16px;
-    margin-bottom: 8px;
-    display: block;
+.container {
+    margin: 20px;
 }
 
-form input {
-    width: 90%;
+.section {
+    background-color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2b7a78;
+}
+
+input[type="text"] {
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border-radius: 6px;
     border: 1px solid #ccc;
-    font-size: 16px;
+    border-radius: 5px;
 }
 
-form button {
+input[type="submit"] {
     background-color: #2b7a78;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 10px 20px;
+    color: white;
     border: none;
-    border-radius: 8px;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-form button:hover {
+input[type="submit"]:hover {
     background-color: #3aafa8;
-    color: #fff6e3;
 }
 
-/* Leaderboard Table */
+/* Table Styles */
 table {
+    width: 100%;
     border-collapse: collapse;
-    width: 80%;
-    margin: 50px auto;
-    background-color: #ffffff;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
-    overflow: hidden;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
 }
 
 th, td {
-    padding: 12px;
+    padding: 15px;
     text-align: center;
-    border: 1px solid #ddd;
 }
 
 th {
     background-color: #2b7a78;
-    color: #ffffff;
-    font-size: 18px;
-}
-
-td {
-    font-size: 16px;
+    color: white;
 }
 
 tr:nth-child(even) {
@@ -127,42 +79,4 @@ tr:nth-child(even) {
 
 tr:hover {
     background-color: #f1f1f1;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Image Container for Additional Sections */
-.image-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-}
-
-.image-container img {
-    width: 750px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Box for Other Content */
-.box {
-    max-width: 1200px;
-    margin: 20px auto;
-    text-align: center;
-    padding: 20px;
-    border-radius: 12px;
-    background-color: #ffffff;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
