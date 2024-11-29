@@ -1,0 +1,586 @@
+/* General styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Changes the default font */
+    margin: 0;
+    padding: 0;
+    background-color: #fff6e3;
+}
+
+.forms {
+    color: #000000;
+    font-size: 1em;
+}
+
+
+/* New Container Style */
+.container {
+    max-width: 1200px; /* Keeps the content width manageable */
+    margin: 0 auto; /* Centers the container */
+    padding: 40px 20px; /* Increased padding for more breathing room */
+    text-align: left; /* Left-aligns content */
+    border-radius: 12px; /* Rounded corners for a softer look */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.box{
+    max-width: 1200px; /* Keeps the content width manageable */
+    margin: 0 auto; /* Centers the container */
+    padding: 0px 0px; /* Increased padding for more breathing room */
+    text-align: left; /* Left-aligns content */
+    border-radius: 12px; /* Rounded corners for a softer look */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow */
+
+}
+
+.heading {
+    max-width: 1200px; /* Maximum width for the content */
+    margin: 0 auto; /* Centers the container on the page */
+    padding: 0px; /* Adds padding on the left and right */
+    text-align: center;
+    font-size: 2em;
+}
+
+.header-icons {
+    margin: 0;
+    background-color: #ffffff00;
+    color: #fff6e3;
+    padding: 20px 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 2.4em;
+}
+
+.header-icons-text {
+    margin: 0;
+    background-color: #ffffff00;
+    padding: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1em;
+    color: #000000;
+}
+
+.header-icons-text1 {
+    margin: 0;
+    background-color: #ffffff00;
+    padding: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 2em;
+    color: #092A71;
+}
+
+.fade-in-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    animation: fadeIn 5s;
+    color: white
+}
+
+
+/* Header styling */
+header {
+    background-color: #fff6e3;
+    color: #ffffff;
+    padding: 5px;
+    text-align: left;
+    border-bottom: 5px solid #3aafa8; /* Adds an accent color as a bottom border */
+}
+
+
+.header-main {
+    background-color: #ffffff; /* Dark blue background */
+    color: #092A71; /* White text */
+    padding: 5px; /* Padding around the header */
+    text-align: center; /* Center the text */
+    font-size: 1em; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    border-bottom: 5px solid #FF4D00; /* Adds an accent color as a bottom border */
+}
+
+header h1 {
+    margin: 0;
+    background-color: #ffffff;
+    color: #ffffff; 
+    padding: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 2.8em;
+
+}
+
+/* Navigation styles */
+nav {
+    background-color: #2b7a78;
+    padding: 0.4%;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 2% 2%;
+    font-size: 25px; /* Increase the font size */
+    background-color: #e61e1e00;
+    border-radius: 8px;
+    margin: 80px;
+
+}
+
+nav a:hover {
+    color: #3aafa8;
+    border-radius: 7px;
+    padding: 2.5
+}
+
+/* Section styling */
+/* Darkened shadow and reduced padding */
+section {
+    margin: 20px;
+    padding: 10px; /* Reduced padding */
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+section h2 {
+    color: #333;
+    text-align: center;
+}
+
+
+section h3 {
+    margin: 0;
+    color: #000000; 
+    padding: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+section p {
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
+/* General layout styling */
+.container {
+    display: flex;
+    justify-content: space-between; /* Space between the main content and the sidebar */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main content styling */
+.main-content {
+    flex: 3; /* Takes up 75% of the container */
+    padding-right: 20px; /* Adds some space between the main content and the sidebar */
+}
+
+/* Sidebar styling */
+.faq-sidebar {
+    flex: 1; /* Takes up 25% of the container */
+    background-color: #f4f4f4; /* Light background for the sidebar */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for effect */
+}
+
+.faq-sidebar h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq-sidebar li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.faq-sidebar strong {
+    color: #092A71; /* Color for the questions */
+}
+
+.nsbox{
+    display: flex; /* Use Flexbox to align items side by side */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Add some space between the items */
+    padding: 20px;
+    max-width: 1200px;
+}
+
+#nsbox-h2 {
+    color: #000000;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Title section styling */
+.title-section {
+    margin: 15px;
+    padding: 5px;
+    background-color: #092A71;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('books.jpg'); /* Use your desired image URL */
+    background-size: cover; /* Ensures the background covers the whole section */
+    background-position: center; /* Centers the background image */
+}
+
+.title-section h2 {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.5em;
+    background: linear-gradient(90deg, #FFD700, #fff 50%, #FFD700); /* Gradient for shiny effect */
+    background-size: 100%;
+    background-clip: text;
+    position: relative; /* Ensure text stays above the background */
+    z-index: 1; /* Bring text above the background */
+}
+
+/* Keyframes for the shiny animation */
+@keyframes shine {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+    
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: flex-start; /* Aligns items to the left */
+}
+
+.about-content img {
+    margin-bottom: 20px; /* Adds space between the image and text */
+    border-radius: 8px; /* Optional: round the corners of the image */
+}
+
+.header-content {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Space between the left and right content */
+    align-items: center; /* Vertically align items in the center */
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column; /* Stack the title and nav vertically */
+    border-radius: 8px; /* Optional: round the corners of the image */
+}
+
+.header-right {
+    display: flex; /* Optional: allows for more items on the right if needed */
+}
+
+.team-section {
+    display: flex; /* Use Flexbox to align items side by side */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Add some space between the items */
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for a 3D effect */
+}
+
+.team-img {
+    border-radius: 25px;
+    padding: 20px 10px
+}
+
+.team-banner {
+    border-radius: 25px;
+    padding: 0px 0px
+}
+.team-intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.form-button-container {
+    text-align: center; /* Centers the button */
+    margin: 6px 0; /* Adds some margin above and below the button */
+}
+
+.form-button {
+    background-color: #FF4D00; /* Button background color */
+    color: #ffffff; /* Text color */
+    padding: 25px 25px; /* Padding around the text */
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 35px; /* Rounds the corners of the button */
+    font-size: 15px; /* Increases font size */
+}
+
+.form-button:hover {
+    background-color: #092A71; /* Darker color on hover */
+}
+
+/* Flex container to hold text and gallery */
+.content-wrapper {
+    display: flex;
+    justify-content: center; /* Ensures space between text and gallery */
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 30px; /* Adds space between the text and the gallery */
+    max-width: 1200px; /* Limits the width */
+    margin: 0 auto; /* Centers content */
+    padding: 20px; /* Adds padding around the content */
+    
+}
+
+/* Styling for the text section */
+#info {
+    flex: 1; /* Takes up available space */
+    max-width: 400px; /* Limits text width */
+    
+}
+
+/* Gallery styling */
+.projects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Horizontal gap between panels */
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2px 10px; /* Vertical and horizontal padding */
+    border-radius: 12px; /* Rounded corners */
+}
+
+/* Updated .project-panel styling */
+.project-panel {
+    display: flex;
+    flex-direction: column; /* Stack title and content vertically */
+    text-align: center;
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height for consistency */
+    perspective: 1000px; /* Depth for 3D effect */
+    flex-basis: 30%; /* Ensures responsive layout */
+    transition: transform 0.5s ease-in-out;
+    box-sizing: border-box; /* Prevents overflow */
+    margin: 0; /* Remove any default margin */
+}
+
+/* Ensure the items in the gallery are closely packed together */
+.projects-gallery > .project-panel {
+    margin-bottom: 0; /* No vertical gap between panels */
+}
+
+
+/* Panel Flip - inside the panel */
+.panel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Enables 3D transformations */
+    transition: transform 0s ease-in-out; /* Smooth flip transition */
+}
+
+/* Make sure the hover tilts the panel */
+.project-panel:hover .panel-inner {
+    transform: rotateY(10deg); /* Tilting effect on hover */
+    transition: transform 0.3s;
+}
+
+/* Flip the panel only when it has the 'clicked' class */
+.project-panel.clicked .panel-inner {
+    transform: rotateY(180deg); /* Flip the panel */
+}
+
+/* Front and back sides of the panel */
+.panel-front,
+.panel-back {
+    position: absolute;
+    backface-visibility: hidden; /* Prevents the back from showing when flipped */
+    width: 100%;
+    height: 100%;
+}
+
+/* Front side styling (image and title) */
+.panel-front {
+    display: flex;
+    flex-direction: column; /* Stacks the content (image + title) vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Back side styling (description) */
+.panel-back {
+    background-color: #f4f4f4;
+    color: #000;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg); /* Initially hidden behind the front */
+    height: 100%; /* Ensures back panel matches front */
+    text-align: left;
+}
+
+/* Title styling - make sure it is below the panel */
+.panel-title {
+    margin-top: 10px; /* Adds space above the title */
+    font-size: 1.3em;
+    font-weight: bold;
+    background: #092A71;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensures it stretches across the bottom */
+    text-align: center; /* Center title text */
+}
+
+/* Hover effect on panel title */
+.project-panel:hover .panel-title {
+    background-color: #6868689a; /* Change color when hovered */
+}
+
+/* Styling for the panel image */
+.project-panel img {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect on image */
+.project-panel:hover img {
+    box-shadow: 0 6px 12px rgba(121, 121, 121, 0.4); /* Shadow effect on hover */
+}
+
+/* Full-Screen Popup Styling */
+.project-panel.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures it appears above everything else */
+}
+
+/* Styling for the close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Close button hover effect */
+.close-btn:hover {
+    background-color: #FF4D00;
+}
+
+
+.white-text {
+    color: white; /* Set text color to white */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.8em
+}
+
+.orange-text {
+    color: #FF4D00; /* Set text color to orange */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.8em
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    position: relative;
+  }
+  
+  /* Images */
+  .mySlides img {
+    width: 50%;
+    height: 650px;
+  }
+  
+  /* Text overlay */
+  .text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;    /* Move text to the top */
+    left: 10%;   /* Move text to the left */
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background (optional) */
+    padding: 10px;
+    width: auto; /* Adjust width as needed */
+  }
+  
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #FF4D00;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
