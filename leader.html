@@ -9,16 +9,14 @@
         <tr>
             <th>Rank</th>
             <th>Name</th>
-            <th>Score</th>
+            <th>School</th>
         </tr>
-        {% for rank, entry in enumerate(leaderboard, start=1) %}
         <tr>
             <td>{{ rank }}</td>
             <td>{{ entry[0] }}</td>
             <td>{{ entry[1] }}</td>
         </tr>
-        {% endfor %}
     </table>
-    <a href="{{ url_for('register') }}">Register another user</a>
+    <a href="/templates/register.html">Register another user</a>
 </body>
 </html>
