@@ -2,21 +2,45 @@
 <html>
 <head>
     <title>Leaderboard</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1>Leaderboard</h1>
-    <table border="1">
+    <table>
         <tr>
             <th>Rank</th>
             <th>Name</th>
             <th>School</th>
+            <th>Email</th>
+            <th>Points</th>
         </tr>
+        {% for rank, entry in enumerate(leaderboard, start=1) %}
         <tr>
             <td>{{ rank }}</td>
             <td>{{ entry[0] }}</td>
             <td>{{ entry[1] }}</td>
+            <td>{{ entry[2] }}</td>
+            <td>{{ entry[3] }}</td>
         </tr>
+        {% endfor %}
     </table>
-    <a href="/templates/register.html">Register another user</a>
+    <a href="{{ url_for('register') }}" style="display: block; text-align: center; margin-top: 20px;">Back to Register</a>
 </body>
 </html>
