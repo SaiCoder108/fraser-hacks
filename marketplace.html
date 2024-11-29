@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHA Marketplace || Homepage</title>
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <a href="index.html"><img src="/images/banlogo.png" alt="Logo" class="team-banner" style="width:750px; height:auto;"></a>      
+            </div>
+            <div class="header-right">
+                <a href="messages.html"><img src="/images/notis.png" alt="Notifications" class="team-img" style="width:300px; height:90px;"></a>
+            </div>
+            <div class="header-right">
+                <a href="about.html"><img src="/images/profile.png" alt="Profile" class="team-img" style="width:80px; height:90px;"></a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <a href="marketplace.html">Marketplace</a> |
+        <a href="leader.html">Leaderboard</a> |
+        <a href="disscussions.html">Discussion</a>
+    </nav>
+    
+    <div class="search-container" style="text-align: center; margin: 20px 0;">
+        <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search for courses, scholarships..." required style="padding: 10px; width: 900px; height: 50px; font-size: 18px;">
+            <button type="submit" style="padding: 10px; height: 72px; width: 100px; border-radius: 10px; background-color: #2b7a78; color: white; border: none; font-size: 18px;">Search</button>
+        </form>        
+    </div>
+
+    <div class="box">
+        <h2 style="color: #2b7a78;"><u>Popular Items Right Now</u></h2>
+
+        <div class="image-container">
+            <div class="item">
+                <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science"><img src="/images/harvard.jpg" alt="Harvard CS50" style="width:350px; height:200px;"></a>
+                <div class="item-details">
+                    <h3>Harvard CS50 - Full University Course</h3>
+                    <p>Harvard University</p>
+                    <p>150 EduCoins</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="https://hosacanada.org/home/2024-2025-workshops/"><img src="/images/hosa.png" alt="Pathways to Dentistry" style="width:350px; height:200px;"></a>
+                <div class="item-details">
+                    <h3>The Dentist - Pathways to Dentistry</h3>
+                    <p>HOSA Canada</p>
+                    <p>300 EduCoins</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 AHA Marketplace. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
