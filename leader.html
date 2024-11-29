@@ -1,46 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 50%;
-            margin: auto;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        h1 {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <h1>Leaderboard</h1>
-    <table>
-        <tr>
-            <th>Rank</th>
-            <th>Name</th>
-            <th>School</th>
-            <th>Email</th>
-            <th>Points</th>
-        </tr>
-        {% for rank, entry in enumerate(leaderboard, start=1) %}
-        <tr>
-            <td>{{ rank }}</td>
-            <td>{{ entry[0] }}</td>
-            <td>{{ entry[1] }}</td>
-            <td>{{ entry[2] }}</td>
-            <td>{{ entry[3] }}</td>
-        </tr>
-        {% endfor %}
-    </table>
-    <a href="{{ url_for('register') }}" style="display: block; text-align: center; margin-top: 20px;">Back to Register</a>
+    <header>
+        <div class="header-content">
+            <h1>Leaderboard</h1>
+        </div>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Time Spent (seconds)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for rank, (name, time_spent) in enumerate(leaderboard, 1) %}
+                <tr>
+                    <td>{{ rank }}</td>
+                    <td>{{ name }}</td>
+                    <td>{{ time_spent }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>© 2024 Leaderboard</p>
+    </footer>
+
+    <!-- JavaScript to Track Time -->
+    <script>
+        let startTime = Date.now();
+
+        // Function to send time spent to the server
+        function sendTimeToServer() {
+            let endTime = Date.now();
+            let timeSpent = Math.floor((endTime - startTime) / 1000); // Time in seconds
+
+            fetch('/update-time', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ timeSpent: timeSpent })
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Time sent successfully');
+                } else {
+                    console.error('Error sending time data');
+                }
+            });
+        }
+
+        // Send time when the user leaves the page
+        window.addEventListener('beforeunload', sendTimeToServer);
+    </script>
 </body>
 </html>
