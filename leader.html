@@ -1,68 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="/static/styles.css" rel="stylesheet">
     <title>Leaderboard</title>
-    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Leaderboard</h1>
+    <div class="header">
+        <h1>Leaderboard</h1>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>Top Players</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Time Spent (seconds)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for rank, (name, time_spent) in enumerate(leaderboard, 1) %}
+                        <tr>
+                            <td>{{ rank }}</td>
+                            <td>{{ name }}</td>
+                            <td>{{ time_spent }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
-    </header>
-    <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Name</th>
-                    <th>Time Spent (seconds)</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for rank, (name, time_spent) in enumerate(leaderboard, 1) %}
-                <tr>
-                    <td>{{ rank }}</td>
-                    <td>{{ name }}</td>
-                    <td>{{ time_spent }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </main>
-    <footer>
-        <p>© 2024 Leaderboard</p>
-    </footer>
-
-    <!-- JavaScript to Track Time -->
-    <script>
-        let startTime = Date.now();
-
-        // Function to send time spent to the server
-        function sendTimeToServer() {
-            let endTime = Date.now();
-            let timeSpent = Math.floor((endTime - startTime) / 1000); // Time in seconds
-
-            fetch('/update-time', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ timeSpent: timeSpent })
-            })
-            .then(response => {
-                if (response.ok) {
-                    console.log('Time sent successfully');
-                } else {
-                    console.error('Error sending time data');
-                }
-            });
-        }
-
-        // Send time when the user leaves the page
-        window.addEventListener('beforeunload', sendTimeToServer);
-    </script>
+    </div>
 </body>
 </html>
