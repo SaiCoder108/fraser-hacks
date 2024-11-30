@@ -1,4 +1,4 @@
-Harish Amirthan and Annathna proudly represented Glenforest Secondary School at Fraser-Hacks. Together, we developed AHA Learning, an innovative platform addressing intergenerational dissonance in education. 
+Amirthan, Harish & Anannthan proudly represented Glenforest Secondary School at Fraser-Hacks. Together, we developed AHA Learning, an innovative platform addressing intergenerational dissonance in education. 
 Our collaborative efforts and passion for solving real-world problems earned us the Best Presentation of Hack Award, highlighting our creativity, teamwork, and dedication to impactful solutions.
 
 We are excited to continue refining our project and exploring new opportunities to make a difference through technology!
